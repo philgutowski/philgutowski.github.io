@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/imports.css">
+        <link rel="stylesheet" href="css/icons.css">
         <script src="js/vendor/modernizr-2.8.0.min.js"></script>
     </head>
     <body>
@@ -20,52 +21,60 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <section class="outer-container">
+        <div class="social-container">
+          <div class="social">
+            <a href="mailto:phillip.gutowski@gmail.com" target="_blank"><span class="icon-mail"></span></a>
+            <a href="http://twitter.com/liveeastie" target="_blank"><span class="icon-twitter"></span></a>
+            <a href="http://github.com/chukdisc" target="_blank"><span class="icon-github"></span></a>
+            <a href="http://philgutowski.tumblr.com" target="_blank"><span class="icon-tumblr"></span></a>
+          </div>
+        </div>
+
           <div class="page-container bg-1">
-            <h1 id="quote">“What’s in store for me in the direction I don’t take?”<br><em>- Jack Kerouac</em></h1>
+            <div class="avatar"></div>
+            <div class="intro"><h3>I'm <span class="accent">Phil</span>,
+            a full-stack Ruby on Rails developer making the internet a better place.
+            
+            <span class="accent">Here's how:</span></h3></div>
           </div>
 
           <div class="page-container bg-2">
             <ul>
-              <li class="block">
-                <h2>I’m Phil and I do lot’s of stuff.  I’m a versatile
-                  professional living in Boston, Massachusetts, currently studying
-                  the future of web development at <a href="http://www.thisismetis.com">Metis</a>. </h2>
-              </li>
-              <li class="block">
-                <h3>I'm a full stack Ruby on Rails developer.  Check out some of my fun projects.</h3>
-              </li>
-              <li class="block">
-                <h3 class="shoutr">Shoutr</h3>
-                <p><em>Make new friends and yell at them</em></p>
-                <p>It's a web app built with Ruby on Rails.</p>
-              </li>
-              <li class="block">
-                <h3 class="taskr">Taskr</h3>
-                <p><em>Your incessant reminder to get shit done.</em></p>
-                <p>A web app built with rails, jquery and websockets via pusher.</p>
-              </li>
-              <li class="block">
-                <h3 class="garthslist">Garthslist</h3>
-                <p><em>"We're not worthy!"</em></p>
-                <p>A web app built on Rails.  Home to the best of online classifieds.</p>
-              </li>
-              <li class="block">
+              <a href="http://face-space-chat.herokuapp.com" target="_blank" class="block">
                 <h3 class="facespace">facespace</h3>
                 <p><em>A place to share messages and expressions.</em></p>
                 <p>A web app built with Rails, jquery, pusher and HTML 5 video capture.</p>
-              </li>
-              <li class="block">
-                <h3 class="liveeastie">LiveEastie</h3>
+              </a>
+              <a href="http://phils-taskr.herokuapp.com" target="_blank" class="block">
+                <h3 class="taskr">Taskr</h3>
+                <p><em>Your incessant reminder to get shit done.</em></p>
+                <p>A web app built with rails, jquery and websockets via pusher.</p>
+              </a>
+              <a href="http://garthslist.com" class="block">
+                <h3 class="garthslist">Garthslist</h3>
+                <p><em>"We're not worthy!"</em></p>
+                <p>A web app built on Rails.  Home to the best of online classifieds.</p>
+              </a>
+              <a href="http://shoutr.us" target="_blank" class="block">
+                <h3 class="shoutr">Shoutr</h3>
+                <p><em>Make new friends and yell at them</em></p>
+                <p>It's a web app built with Ruby on Rails.</p>
+              </a>
+              <a href="https://github.com/chukdisc/livelock" target="_blank" class="block">
+                <h3 class="LiveLock">LiveLock</h3>
+                <p>An automated music studio access control system.  Work in progress.</p>
+              </a>
+              <a href="http://liveeastie.com" target="_blank" class="block">
+                <div class="liveeastie"></div>
                 <p>An East Boston real estate company, focused on the betterment of community and the hyper-local economy.  I founded the company in 2011 and turned operations over to a new partner in 2014.</p>
-              </li>
-              <li class="block">
-                <h3 class="shipyard">Shipyard Rehearsals</h3>
+              </a>
+              <a href="http://shipyardrehearsals.com" target="_blank" class="block">
+                <div class="shipyard"></div>
                 <p><em>We practice space differently</em></p>
-                <p>A musicians rehearsal studio located in a loft warehouse space overlooking the Chelsea Creek in East Boston.  I opened the studio in 2012 in an effort to foster creation of art and music.</p>
-              </li>
+                <p>We create vibrations in the universe by fostering creation of art and music.</p>
+              </a>
+            </ul>
           </div>
-        </section>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
