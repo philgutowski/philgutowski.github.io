@@ -15,6 +15,7 @@ body {
 
 .social-container {
   @include outer-container;
+  margin-top: 10px;
   .social {
     @include span-columns(12);
     @include media($medium-screen-up) {
@@ -58,13 +59,29 @@ body {
   @include outer-container;
   ul {
     margin-top: 50px;
+
     .block:hover {
       background-color: lighten(whitesmoke, 10);
-      border-radius: 20px;
+      border-radius: 10px;
     }
+
     a {
       color: $base-font-color;
     }
+
+    .github-repo-icon {
+      font-size: 2.5em;
+      position: absolute;
+      bottom: 10px;
+      left: 20px;
+      a {
+        color: $base-link-color;
+      }
+      a:hover {
+        color: $hover-link-color;
+      }
+    }
+
     .block {
       @include span-columns(3);
       @include omega(4n);
@@ -79,22 +96,28 @@ body {
       @include media($small-screen-up) {
         @include span-columns(12);
       }
+
+      position: relative;
       border-radius: 5px;
       background-color: whitesmoke;
       margin-bottom: 20px;
-      min-height: 350px;
+      min-height: 390px;
       padding: 35px;
+
       p {
         margin-top: 25px;
       }
+
       .shoutr {
         font-family: 'Alfa Slab One', cursive;
         color: #e44d36;
       }
+
       .taskr {
         font-family: "Fredoka One", cursive;
         color: #497aa3;
       }
+
       .garthslist {
         font-family: "Michroma", sans-serif;
         color: rgb(46, 49, 146);
@@ -102,7 +125,7 @@ body {
       .facespace {
         font-family: "Monofett", cursive;
         color: rgb(27, 38, 60);
-        font-size: 1.9em;
+        font-size: 2em;
       }
       .liveeastie {
         background-image: url(../img/liveeastie.png);
@@ -114,7 +137,7 @@ body {
         background-image: url(../img/shipyard.png);
         background-size: contain;
         background-repeat: no-repeat;
-        height: 115px;
+        height: 80px;
         width: 100%;
       }
     }
