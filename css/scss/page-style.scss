@@ -17,15 +17,18 @@ body {
   @include outer-container;
   margin-top: 10px;
   .social {
-    @include span-columns(12);
-    @include media($medium-screen-up) {
-      font-size: 1.75em;
-    }
-    text-align: right;
-    font-size: 2.5em;
     span {
       margin: 0 15px;
     }
+    @include span-columns(12);
+    @include media($medium-screen-up) {
+      font-size: 1.75em;
+      span {
+        margin: 0 3px;
+      }
+    }
+    text-align: right;
+    font-size: 2.5em;
   }
 }
 

@@ -441,13 +441,15 @@ body {
     width: 100%;
     text-align: right;
     font-size: 2.5em; }
+    .social-container .social span {
+      margin: 0 15px; }
     .social-container .social:last-child {
       margin-right: 0; }
     @media screen and (max-width: 43.125em) {
       .social-container .social {
-        font-size: 1.75em; } }
-    .social-container .social span {
-      margin: 0 15px; }
+        font-size: 1.75em; }
+        .social-container .social span {
+          margin: 0 3px; } }
 
 .bg-1 {
   max-width: 68em;
