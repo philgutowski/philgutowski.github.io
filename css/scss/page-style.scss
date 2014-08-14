@@ -5,7 +5,8 @@
 $large-screen: em(1060);
 $medium-screen: em(710);
 $small-screen: em(480);
-$large-screen-up: new-breakpoint(min-width $medium-screen 12);
+$large-screen-up: new-breakpoint(min-width $large-screen 12);
+$med-large-screen-up: new-breakpoint(min-width $medium-screen max-width $large-screen 12);
 $medium-screen-up: new-breakpoint(min-width $small-screen max-width $medium-screen 12);
 $small-screen-up: new-breakpoint(max-width $small-screen 12);
 
@@ -27,6 +28,12 @@ body {
 
     @include span-columns(12);
     @include media($medium-screen-up) {
+      font-size: 1.75em;
+      span {
+        margin: 0 3px;
+      }
+    }
+    @include media($small-screen-up) {
       font-size: 1.75em;
       span {
         margin: 0 3px;
@@ -62,6 +69,7 @@ body {
       max-width: 90%;
     }
     @include media($small-screen-up) {
+      @include span-columns(12);
       max-width: 90%;
     }
   }
@@ -95,8 +103,6 @@ body {
     }
 
     .block {
-      // @include span-columns(3);
-      // @include omega(4n);
       position: relative;
       border-radius: 5px;
       background-color: whitesmoke;
@@ -113,13 +119,17 @@ body {
         @include span-columns(3);
         @include omega(4n);
       }
+      @include media($med-large-screen-up) {
+        @include span-columns(4);
+        @include omega(3n);
+      }
       @include media($medium-screen-up) {
         @include span-columns(6);
         @include omega(2n);
       }
       @include media($small-screen-up) {
         @include span-columns(12);
-        margin: 10px;
+        margin: 15px;
         width: 90%;
       }
 
