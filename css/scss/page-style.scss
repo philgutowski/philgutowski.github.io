@@ -4,9 +4,9 @@
 
 $large-screen: em(1060);
 $large-screen-up: new-breakpoint(max-width $large-screen 12);
-$medium-screen: em(690);
+$medium-screen: em(710);
 $medium-screen-up: new-breakpoint(max-width $medium-screen 12);
-$small-screen: em(400);
+$small-screen: em(480);
 $small-screen-up: new-breakpoint(max-width $small-screen 12);
 
 body {
@@ -16,10 +16,15 @@ body {
 .social-container {
   @include outer-container;
   margin-top: 10px;
+  margin-right: 10px;
+
   .social {
+    text-align: right;
+    font-size: 2.5em;
     span {
       margin: 0 15px;
     }
+
     @include span-columns(12);
     @include media($medium-screen-up) {
       font-size: 1.75em;
@@ -27,19 +32,14 @@ body {
         margin: 0 3px;
       }
     }
-    text-align: right;
-    font-size: 2.5em;
   }
 }
 
-.bg-1 {
+.welcome-section {
   @include outer-container;
   margin-top: 20px;
+
   .avatar {
-    @include span-columns(5);
-    @include media($medium-screen-up) {
-      @include span-columns(4);
-    }
     background-image: url(../img/avatar.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -48,17 +48,26 @@ body {
     max-width: 150px;
     border-radius: 50%;
     margin: 0 20px 20px 30px;
+    @include span-columns(5);
+    @include media($medium-screen-up) {
+      @include span-columns(4);
+    }
   }
+
   .intro {
+    margin: 20px;
     @include span-columns(6);
     @include media($medium-screen-up) {
       @include span-columns(12);
+      max-width: 90%;
     }
-    margin: 20px;
+    @include media($small-screen-up) {
+      max-width: 90%;
+    }
   }
 }
 
-.bg-2 {
+.project-section {
   @include outer-container;
   ul {
     margin-top: 50px;
@@ -88,6 +97,18 @@ body {
     .block {
       @include span-columns(3);
       @include omega(4n);
+      position: relative;
+      border-radius: 5px;
+      background-color: whitesmoke;
+      margin-bottom: 20px;
+      min-height: 450px;
+      padding: 35px;
+
+      p {
+        margin-top: 10px;
+        padding-bottom: 20px;
+      }
+
       @include media($large-screen-up) {
         @include span-columns(4);
         @include omega(3n);
@@ -98,17 +119,8 @@ body {
       }
       @include media($small-screen-up) {
         @include span-columns(12);
-      }
-
-      position: relative;
-      border-radius: 5px;
-      background-color: whitesmoke;
-      margin-bottom: 20px;
-      min-height: 390px;
-      padding: 35px;
-
-      p {
-        margin-top: 25px;
+        margin: 10px;
+        width: 90%;
       }
 
       .shoutr {
@@ -128,7 +140,8 @@ body {
       .facespace {
         font-family: "Monofett", cursive;
         color: rgb(27, 38, 60);
-        font-size: 2em;
+        font-size: 2.9em;
+        line-height: .7em;
       }
       .liveeastie {
         background-image: url(../img/liveeastie.png);
@@ -141,6 +154,13 @@ body {
         background-size: contain;
         background-repeat: no-repeat;
         height: 80px;
+        width: 100%;
+      }
+      .kaki-lima {
+        background-image: url(../img/kaki_lima.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 120px;
         width: 100%;
       }
     }

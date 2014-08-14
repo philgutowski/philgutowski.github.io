@@ -215,42 +215,39 @@ body {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px; }
+  margin-top: 10px;
+  margin-right: 10px; }
   .social-container:after {
     content: "";
     display: table;
     clear: both; }
   .social-container .social {
+    text-align: right;
+    font-size: 2.5em;
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 100%;
-    text-align: right;
-    font-size: 2.5em; }
+    width: 100%; }
     .social-container .social span {
       margin: 0 15px; }
     .social-container .social:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 43.125em) {
+    @media screen and (max-width: 44.375em) {
       .social-container .social {
         font-size: 1.75em; }
         .social-container .social span {
           margin: 0 3px; } }
 
-.bg-1 {
+.welcome-section {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px; }
-  .bg-1:after {
+  .welcome-section:after {
     content: "";
     display: table;
     clear: both; }
-  .bg-1 .avatar {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 40.29137%;
+  .welcome-section .avatar {
     background-image: url(../img/avatar.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -258,59 +255,67 @@ body {
     min-width: 150px;
     max-width: 150px;
     border-radius: 50%;
-    margin: 0 20px 20px 30px; }
-    .bg-1 .avatar:last-child {
+    margin: 0 20px 20px 30px;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%; }
+    .welcome-section .avatar:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 43.125em) {
-      .bg-1 .avatar {
+    @media screen and (max-width: 44.375em) {
+      .welcome-section .avatar {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 31.76157%; }
-        .bg-1 .avatar:last-child {
+        .welcome-section .avatar:last-child {
           margin-right: 0; } }
-  .bg-1 .intro {
+  .welcome-section .intro {
+    margin: 20px;
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%;
-    margin: 20px; }
-    .bg-1 .intro:last-child {
+    width: 48.82117%; }
+    .welcome-section .intro:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 43.125em) {
-      .bg-1 .intro {
+    @media screen and (max-width: 44.375em) {
+      .welcome-section .intro {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 100%; }
-        .bg-1 .intro:last-child {
+        width: 100%;
+        max-width: 90%; }
+        .welcome-section .intro:last-child {
           margin-right: 0; } }
+    @media screen and (max-width: 30em) {
+      .welcome-section .intro {
+        max-width: 90%; } }
 
-.bg-2 {
+.project-section {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  .bg-2:after {
+  .project-section:after {
     content: "";
     display: table;
     clear: both; }
-  .bg-2 ul {
+  .project-section ul {
     margin-top: 50px; }
-    .bg-2 ul .block:hover {
+    .project-section ul .block:hover {
       background-color: white;
       border-radius: 10px; }
-    .bg-2 ul a {
+    .project-section ul a {
       color: #556270; }
-    .bg-2 ul .github-repo-icon {
+    .project-section ul .github-repo-icon {
       font-size: 2.5em;
       position: absolute;
       bottom: 10px;
       left: 20px; }
-      .bg-2 ul .github-repo-icon a {
+      .project-section ul .github-repo-icon a {
         color: #C44D58; }
-      .bg-2 ul .github-repo-icon a:hover {
+      .project-section ul .github-repo-icon a:hover {
         color: #d7868e; }
-    .bg-2 ul .block {
+    .project-section ul .block {
       float: left;
       display: block;
       margin-right: 2.35765%;
@@ -319,71 +324,81 @@ body {
       border-radius: 5px;
       background-color: whitesmoke;
       margin-bottom: 20px;
-      min-height: 390px;
+      min-height: 450px;
       padding: 35px; }
-      .bg-2 ul .block:last-child {
+      .project-section ul .block:last-child {
         margin-right: 0; }
-      .bg-2 ul .block:nth-child(4n) {
+      .project-section ul .block:nth-child(4n) {
         margin-right: 0; }
-      .bg-2 ul .block:nth-child(4n+1) {
+      .project-section ul .block:nth-child(4n+1) {
         clear: left; }
+      .project-section ul .block p {
+        margin-top: 10px;
+        padding-bottom: 20px; }
       @media screen and (max-width: 66.25em) {
-        .bg-2 ul .block {
+        .project-section ul .block {
           float: left;
           display: block;
           margin-right: 2.35765%;
           width: 31.76157%; }
-          .bg-2 ul .block:last-child {
+          .project-section ul .block:last-child {
             margin-right: 0; }
-          .bg-2 ul .block:nth-child(3n) {
+          .project-section ul .block:nth-child(3n) {
             margin-right: 0; }
-          .bg-2 ul .block:nth-child(3n+1) {
+          .project-section ul .block:nth-child(3n+1) {
             clear: left; } }
-      @media screen and (max-width: 43.125em) {
-        .bg-2 ul .block {
+      @media screen and (max-width: 44.375em) {
+        .project-section ul .block {
           float: left;
           display: block;
           margin-right: 2.35765%;
           width: 48.82117%; }
-          .bg-2 ul .block:last-child {
+          .project-section ul .block:last-child {
             margin-right: 0; }
-          .bg-2 ul .block:nth-child(2n) {
+          .project-section ul .block:nth-child(2n) {
             margin-right: 0; }
-          .bg-2 ul .block:nth-child(2n+1) {
+          .project-section ul .block:nth-child(2n+1) {
             clear: left; } }
-      @media screen and (max-width: 25em) {
-        .bg-2 ul .block {
+      @media screen and (max-width: 30em) {
+        .project-section ul .block {
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 100%; }
-          .bg-2 ul .block:last-child {
+          width: 100%;
+          margin: 10px;
+          width: 90%; }
+          .project-section ul .block:last-child {
             margin-right: 0; } }
-      .bg-2 ul .block p {
-        margin-top: 25px; }
-      .bg-2 ul .block .shoutr {
+      .project-section ul .block .shoutr {
         font-family: 'Alfa Slab One', cursive;
         color: #e44d36; }
-      .bg-2 ul .block .taskr {
+      .project-section ul .block .taskr {
         font-family: "Fredoka One", cursive;
         color: #497aa3; }
-      .bg-2 ul .block .garthslist {
+      .project-section ul .block .garthslist {
         font-family: "Michroma", sans-serif;
         color: #2e3192; }
-      .bg-2 ul .block .facespace {
+      .project-section ul .block .facespace {
         font-family: "Monofett", cursive;
         color: #1b263c;
-        font-size: 2em; }
-      .bg-2 ul .block .liveeastie {
+        font-size: 2.9em;
+        line-height: .7em; }
+      .project-section ul .block .liveeastie {
         background-image: url(../img/liveeastie.png);
         background-size: contain;
         background-repeat: no-repeat;
         height: 25px; }
-      .bg-2 ul .block .shipyard {
+      .project-section ul .block .shipyard {
         background-image: url(../img/shipyard.png);
         background-size: contain;
         background-repeat: no-repeat;
         height: 80px;
+        width: 100%; }
+      .project-section ul .block .kaki-lima {
+        background-image: url(../img/kaki_lima.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 120px;
         width: 100%; }
 
 .accent {
