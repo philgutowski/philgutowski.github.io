@@ -10,7 +10,7 @@
 button,
 input[type="submit"] {
   -webkit-font-smoothing: antialiased;
-  background-color: #C44D58;
+  background-color: #c44d58;
   border-radius: 0.1875em;
   color: white;
   display: inline-block;
@@ -26,7 +26,7 @@ input[type="submit"] {
 
 body {
   -webkit-font-smoothing: antialiased;
-  background-color: #C7F464;
+  background-color: #c7f464;
   color: #556270;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em;
@@ -63,7 +63,7 @@ a {
   -webkit-transition: color 0.1s linear;
   -moz-transition: color 0.1s linear;
   transition: color 0.1s linear;
-  color: #C44D58;
+  color: #c44d58;
   text-decoration: none; }
   a:hover {
     color: #d7868e; }
@@ -72,7 +72,7 @@ a {
     outline: none; }
 
 hr {
-  border-bottom: 1px solid #DDD;
+  border-bottom: 1px solid #dddddd;
   border-left: none;
   border-right: none;
   border-top: none;
@@ -83,7 +83,7 @@ img {
   max-width: 100%; }
 
 blockquote {
-  border-left: 2px solid #DDD;
+  border-left: 2px solid #dddddd;
   color: #798899;
   margin: 1.5em 0;
   padding-left: 0.75em; }
@@ -96,7 +96,7 @@ cite {
 
 fieldset {
   background: #f7f7f7;
-  border: 1px solid #DDD;
+  border: 1px solid #dddddd;
   margin: 0 0 0.75em 0;
   padding: 1.5em; }
 
@@ -126,7 +126,7 @@ select[multiple=multiple] {
   transition: border-color;
   background-color: white;
   border-radius: 0.1875em;
-  border: 1px solid #DDD;
+  border: 1px solid #dddddd;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em;
@@ -140,7 +140,7 @@ select[multiple=multiple] {
   textarea:focus,
   input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
   select[multiple=multiple]:focus {
-    border-color: #C44D58;
+    border-color: #c44d58;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(186, 62, 73, 0.7);
     outline: none; }
 
@@ -181,7 +181,7 @@ th {
   text-align: left; }
 
 td {
-  border-bottom: 1px solid #DDD;
+  border-bottom: 1px solid #dddddd;
   padding: 0.75em 0; }
 
 tr, td, th {
@@ -220,7 +220,7 @@ input[type="submit"] {
 button,
 input[type="submit"] {
   -webkit-font-smoothing: antialiased;
-  background-color: #C44D58;
+  background-color: #c44d58;
   border-radius: 0.1875em;
   color: white;
   display: inline-block;
@@ -236,7 +236,7 @@ input[type="submit"] {
 
 body {
   -webkit-font-smoothing: antialiased;
-  background-color: #C7F464;
+  background-color: #c7f464;
   color: #556270;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em;
@@ -273,7 +273,7 @@ a {
   -webkit-transition: color 0.1s linear;
   -moz-transition: color 0.1s linear;
   transition: color 0.1s linear;
-  color: #C44D58;
+  color: #c44d58;
   text-decoration: none; }
   a:hover {
     color: #d7868e; }
@@ -282,7 +282,7 @@ a {
     outline: none; }
 
 hr {
-  border-bottom: 1px solid #DDD;
+  border-bottom: 1px solid #dddddd;
   border-left: none;
   border-right: none;
   border-top: none;
@@ -293,7 +293,7 @@ img {
   max-width: 100%; }
 
 blockquote {
-  border-left: 2px solid #DDD;
+  border-left: 2px solid #dddddd;
   color: #798899;
   margin: 1.5em 0;
   padding-left: 0.75em; }
@@ -306,7 +306,7 @@ cite {
 
 fieldset {
   background: #f7f7f7;
-  border: 1px solid #DDD;
+  border: 1px solid #dddddd;
   margin: 0 0 0.75em 0;
   padding: 1.5em; }
 
@@ -336,7 +336,7 @@ select[multiple=multiple] {
   transition: border-color;
   background-color: white;
   border-radius: 0.1875em;
-  border: 1px solid #DDD;
+  border: 1px solid #dddddd;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em;
@@ -350,7 +350,7 @@ select[multiple=multiple] {
   textarea:focus,
   input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
   select[multiple=multiple]:focus {
-    border-color: #C44D58;
+    border-color: #c44d58;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(186, 62, 73, 0.7);
     outline: none; }
 
@@ -391,7 +391,7 @@ th {
   text-align: left; }
 
 td {
-  border-bottom: 1px solid #DDD;
+  border-bottom: 1px solid #dddddd;
   padding: 0.75em 0; }
 
 tr, td, th {
@@ -423,7 +423,7 @@ input[type="submit"] {
   white-space: nowrap; }
 
 body {
-  background-color: #C7F464; }
+  background-color: #c7f464; }
 
 .social-container {
   max-width: 68em;
@@ -446,7 +446,7 @@ body {
       margin: 0 15px; }
     .social-container .social:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 44.375em) {
+    @media screen and (min-width: 30em) and (max-width: 44.375em) {
       .social-container .social {
         font-size: 1.75em; }
         .social-container .social span {
@@ -476,7 +476,7 @@ body {
     width: 40.29137%; }
     .welcome-section .avatar:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 44.375em) {
+    @media screen and (min-width: 30em) and (max-width: 44.375em) {
       .welcome-section .avatar {
         float: left;
         display: block;
@@ -492,7 +492,7 @@ body {
     width: 48.82117%; }
     .welcome-section .intro:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 44.375em) {
+    @media screen and (min-width: 30em) and (max-width: 44.375em) {
       .welcome-section .intro {
         float: left;
         display: block;
@@ -526,42 +526,32 @@ body {
       bottom: 10px;
       left: 20px; }
       .project-section ul .github-repo-icon a {
-        color: #C44D58; }
+        color: #c44d58; }
       .project-section ul .github-repo-icon a:hover {
         color: #d7868e; }
     .project-section ul .block {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 23.23176%;
       position: relative;
       border-radius: 5px;
       background-color: whitesmoke;
       margin-bottom: 20px;
       min-height: 450px;
       padding: 35px; }
-      .project-section ul .block:last-child {
-        margin-right: 0; }
-      .project-section ul .block:nth-child(4n) {
-        margin-right: 0; }
-      .project-section ul .block:nth-child(4n+1) {
-        clear: left; }
       .project-section ul .block p {
         margin-top: 10px;
         padding-bottom: 20px; }
-      @media screen and (max-width: 66.25em) {
+      @media screen and (min-width: 44.375em) {
         .project-section ul .block {
           float: left;
           display: block;
           margin-right: 2.35765%;
-          width: 31.76157%; }
+          width: 23.23176%; }
           .project-section ul .block:last-child {
             margin-right: 0; }
-          .project-section ul .block:nth-child(3n) {
+          .project-section ul .block:nth-child(4n) {
             margin-right: 0; }
-          .project-section ul .block:nth-child(3n+1) {
+          .project-section ul .block:nth-child(4n+1) {
             clear: left; } }
-      @media screen and (max-width: 44.375em) {
+      @media screen and (min-width: 30em) and (max-width: 44.375em) {
         .project-section ul .block {
           float: left;
           display: block;
@@ -616,6 +606,4 @@ body {
         width: 100%; }
 
 .accent {
-  color: #C44D58; }
-
-/*# sourceMappingURL=imports.css.map */
+  color: #c44d58; }
