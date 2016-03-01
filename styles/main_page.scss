@@ -1,0 +1,120 @@
+body {
+	background-color: $background;
+	background-image: url(../../img/noisy-grid.png);
+	background-attachment: fixed;
+	font-family: $merriweather;
+	color: $primary-text;
+	text-shadow: .5px 1px 5px #c8bcac;
+}
+
+h1 {
+	font-size: 4em;
+	@media #{$break-small} {
+		font-size: 2em;
+	}
+	@media #{$break-med} {
+		font-size: 2.75em;
+	}
+}
+
+h2 {
+	font-size: 2em;
+	@media #{$break-small} {
+		font-size: 1.5em;
+	}
+	@media #{$break-med} {
+		font-size: 1.75em;
+	}
+}
+
+h3 {
+	font-size: 1.5em;
+	@media #{$break-small} {
+		font-size: 1em;
+	}
+	@media #{$break-med} {
+		font-size: 1.25em;
+	}
+}
+
+.social-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+
+	a {
+		text-decoration: none;
+	}
+
+	.icon {
+		margin: 0 3.75vw;
+		color: $links;
+
+		font-size: 3em;
+		@media #{$break-small} {
+			font-size: 1em;
+			margin: 0 2vw;
+		}
+		@media #{$break-med} {
+			font-size: 2em;
+		}
+	}
+}
+
+.welcome-section {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	flex-direction: column;
+
+	.word {
+		// margin-top: 20px;
+
+		@media #{$break-med} {
+			line-height: 1.75em;
+		}
+		@media #{$break-small} {
+			line-height: 1.15em;
+		}
+	}
+
+	.definition {
+		color: $secondary-text;
+		margin-top: -25px;
+	}
+
+	.avatar {
+		background-image: url(../../img/avatar.jpg);
+		height: 50vw;
+		width: 50vw;
+		max-width: 200px;
+		max-height: 200px;
+		background-size: cover;
+		border-radius: 50%;
+		margin: 5px auto 0 auto;
+		box-shadow: 1px 2px 7px lightgray;
+	}
+
+	.intro {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+
+		.name {
+			font-family: $fun;
+			line-height: 1.75em;
+			@media #{$break-small} {
+				line-height: .75em;
+			}
+		}
+
+		.tagline {
+			color: $secondary-text;
+			line-height: 1em;
+		}
+
+		.location {
+			line-height: .5em;
+		}
+	}
+}
