@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Card back</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Pacifico&display=block">
+  <link rel="stylesheet" href="card.css">
+  <script>
+    /* build.sh opens the page with ?raster to capture a 300 dpi JPEG.
+       Zooming by 300/96 makes one CSS inch land on 300 device pixels. */
+    if (location.search.includes("raster")) document.documentElement.style.zoom = 300 / 96;
+  </script>
+</head>
+<body class="back">
+  <div class="safe">
+    <p class="name">Phil Gutowski</p>
+    <p class="tagline">Technologist, AI Engineer, Electrician, Ocean Sailor</p>
+    <p class="location">Brooklyn, New York</p>
+    <div class="rule"></div>
+    <p class="contact">philgutowski.com<br>phillip.gutowski@gmail.com</p>
+  </div>
+</body>
+</html>

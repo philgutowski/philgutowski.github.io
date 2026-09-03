@@ -27,3 +27,11 @@ of this repo. The `CNAME` file maps the custom domain.
 Edit `index.html` or `styles.css`, open `index.html` in a browser to check it, commit, and
 push `master`. A push to `master` is a live deploy. There is no build step and nothing to
 install.
+
+## Business card
+
+`card/` holds a two sided business card that matches the site, sized for MOO standard US
+cards (bleed 3.66 x 2.16 in, trim 3.5 x 2 in, safe area 3.34 x 1.84 in). `front.html` is
+the versatile entry on navy, `back.html` is the name and contact details on paper, and
+`card.css` holds the sizes and colors. Run `card/build.sh` to regenerate `front.pdf`,
+`back.pdf`, `front.jpg`, and `back.jpg` with headless Chrome. Upload the PDFs to MOO.
