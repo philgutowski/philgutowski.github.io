@@ -99,38 +99,35 @@ body {
   font-size: 0.95em;
 }
 
+/* Icon sprite: the shapes live once here and each link reuses one by id.
+   Zero size and absolute so it takes no space in the layout. */
+.sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+
 .links {
-  margin-top: 0.9rem;
+  margin-top: 1rem;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 0.6rem;
+  gap: clamp(1.25rem, 5vw, 2.5rem);
 }
 
 .links a {
-  display: inline-block;
-  min-width: 7.5rem;
-  padding: 0.6rem 1.1rem;
-  border: 1px solid var(--ring);
-  border-radius: 999px;
-  color: var(--text);
-  text-decoration: none;
-  font-size: 0.95em;
-  transition: background-color 120ms ease, color 120ms ease, border-color 120ms ease, transform 120ms ease;
+  display: block;
+  color: var(--accent);
+  line-height: 0;
+  transition: color 120ms ease, transform 120ms ease;
+}
+
+.links svg {
+  width: clamp(2rem, 8vw, 2.75rem);
+  height: clamp(2rem, 8vw, 2.75rem);
+  fill: currentColor;
 }
 
 .links a:hover,
 .links a:focus-visible {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--accent-text);
-  transform: translateY(-1px);
+  color: var(--text);
+  transform: translateY(-2px);
   outline: none;
-}
-
-@media (max-width: 400px) {
-  .links { display: grid; grid-template-columns: 1fr 1fr; width: 100%; }
-  .links a { min-width: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
