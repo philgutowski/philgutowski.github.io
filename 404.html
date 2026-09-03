@@ -1,59 +1,42 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Page Not Found</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-
-        * {
-            line-height: 1.5;
-            margin: 0;
-        }
-
-        html {
-            color: #888;
-            font-family: sans-serif;
-            text-align: center;
-        }
-
-        body {
-            left: 50%;
-            margin: -43px 0 0 -150px;
-            position: absolute;
-            top: 50%;
-            width: 300px;
-        }
-
-        h1 {
-            color: #555;
-            font-size: 2em;
-            font-weight: 400;
-        }
-
-        p {
-            line-height: 1.2;
-        }
-
-        @media only screen and (max-width: 270px) {
-
-            body {
-                margin: 10px auto;
-                position: static;
-                width: 95%;
-            }
-
-            h1 {
-                font-size: 1.5em;
-            }
-
-        }
-
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found</title>
+  <meta name="robots" content="noindex">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f6f1e8">
+  <script>
+    (function () {
+      var theme = null;
+      try { theme = localStorage.getItem("theme"); } catch (e) {}
+      if (theme !== "light" && theme !== "dark") {
+        theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="16x16">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Pacifico&display=swap">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .code { margin: 0; font-family: var(--font-name); font-size: clamp(3rem, 2rem + 5vw, 5rem); line-height: 1.2; color: var(--accent); }
+    .home { display: inline-block; margin-top: 1rem; padding: 0.6rem 1.2rem; border: 1px solid var(--ring); border-radius: 999px; color: var(--text); text-decoration: none; }
+    .home:hover, .home:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
+  </style>
 </head>
 <body>
-    <h1>Page Not Found</h1>
-    <p>Sorry, but the page you were trying to view does not exist.</p>
+  <main class="card">
+    <p class="code">404</p>
+    <h1 class="headword">lost</h1>
+    <p class="phonetic">/l&#244;st/ <i>adjective</i></p>
+    <p class="definition">unable to find one's way; not knowing one's whereabouts.</p>
+    <p class="location">The page you were looking for is not here.</p>
+    <a class="home" href="/">Back to philgutowski.com</a>
+  </main>
 </body>
 </html>
-<!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->
