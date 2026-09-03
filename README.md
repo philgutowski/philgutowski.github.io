@@ -38,6 +38,6 @@ the versatile entry on navy, `back.html` is the name and contact details on pape
 
 ## LinkedIn banner
 
-`banner/` holds the LinkedIn profile banner, the versatile entry on navy at LinkedIn's
-1584 x 396 size, with the content kept right of the spot where the profile photo overlaps.
+`banner/` holds the LinkedIn profile banner, the versatile entry on paper at LinkedIn's
+1584 x 396 size, with the content centered in the clear region right of the profile photo.
 Run `banner/build.sh` to regenerate `linkedin-banner.png` with headless Chrome.
