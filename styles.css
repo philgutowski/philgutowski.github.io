@@ -2,17 +2,34 @@
    One plain CSS file. No preprocessor, no build step.
    Change the palette and fonts in :root and everything below follows. */
 
+/* Light palette (default). */
 :root {
   --bg: #f6f1e8;          /* warm paper */
-  --bg-glow: #ffffff;     /* white glow behind the card */
+  --bg-glow: #ffffff;     /* glow behind the card */
   --text: #17303f;        /* navy */
   --muted: #526676;       /* slate for secondary text */
   --accent: #9c5211;      /* copper, the one accent color */
-  --accent-text: #f6f1e8; /* text color on top of the accent */
   --ring: rgba(23, 48, 63, 0.15);
+  --avatar-shadow: 0 14px 30px rgba(23, 48, 63, 0.22);
+  --icon-shadow: 0 2px 3px rgba(23, 48, 63, 0.28);
 
   --font-body: "Merriweather", Georgia, "Times New Roman", serif;
   --font-name: "Pacifico", "Brush Script MT", cursive;
+  color-scheme: light;
+}
+
+/* Dark palette. The script in index.html sets data-theme on <html>
+   from the saved choice or the system preference. */
+:root[data-theme="dark"] {
+  --bg: #0f1d2b;          /* deep navy */
+  --bg-glow: #1b3247;
+  --text: #eee7da;        /* warm sand */
+  --muted: #9db0c2;
+  --accent: #e8a33d;      /* amber */
+  --ring: rgba(238, 231, 218, 0.18);
+  --avatar-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+  --icon-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  color-scheme: dark;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -33,6 +50,7 @@ body {
   font-size: clamp(0.95rem, 0.9rem + 0.3vw, 1.075rem);
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
+  transition: background-color 250ms ease, color 250ms ease;
 }
 
 .card {
@@ -75,7 +93,7 @@ body {
   width: clamp(6rem, 26vw, 8.5rem);
   height: auto;
   border-radius: 50%;
-  box-shadow: 0 0 0 3px var(--ring), 0 14px 30px rgba(23, 48, 63, 0.22);
+  box-shadow: 0 0 0 3px var(--ring), var(--avatar-shadow);
   margin: 0.5rem 0 0.25rem;
 }
 
@@ -122,7 +140,7 @@ body {
   height: clamp(2rem, 8vw, 2.75rem);
   fill: currentColor;
   /* filter follows the icon's shape, unlike box-shadow which would shadow the square */
-  filter: drop-shadow(0 2px 3px rgba(23, 48, 63, 0.28));
+  filter: drop-shadow(var(--icon-shadow));
 }
 
 .links a:hover,
@@ -132,6 +150,48 @@ body {
   outline: none;
 }
 
+/* Theme toggle: a small circle in the top right corner. */
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  border: 1px solid var(--ring);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  opacity: 0.7;
+  transition: opacity 120ms ease, color 120ms ease, border-color 120ms ease;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  opacity: 1;
+  color: var(--accent);
+  border-color: var(--accent);
+  outline: none;
+}
+
+.theme-toggle svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Show the moon in light mode and the sun in dark mode. */
+.theme-toggle .sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .sun { display: block; }
+:root[data-theme="dark"] .theme-toggle .moon { display: none; }
+
 @media (prefers-reduced-motion: reduce) {
-  .links a { transition: none; }
+  body, .links a, .theme-toggle { transition: none; }
 }

@@ -5,9 +5,13 @@ of this repo. The `CNAME` file maps the custom domain.
 
 ## How it is built
 
-- `index.html` is the whole site. Plain HTML, no JavaScript, no framework.
-- `styles.css` is one plain CSS file. Colors and fonts are CSS custom properties at the top
-  of the file, so a new theme is a change to `:root` only.
+- `index.html` is the whole site. Plain HTML, no framework. Two small inline scripts run
+  the light and dark theme toggle: one in the head picks the theme before first paint
+  (saved choice, then system preference, then light), one at the end of the body handles
+  the button click and saves the choice in the browser.
+- `styles.css` is one plain CSS file. The light palette is the set of custom properties on
+  `:root`, the dark palette is the set on `:root[data-theme="dark"]`, and everything else
+  reads from those variables. A new theme is a change to those two blocks only.
 - Fonts load from Google Fonts (Merriweather for the text, Pacifico for the name) with
   system fallbacks, so the page still reads fine if the font request fails.
 - `img/avatar.jpg` is the photo. `favicon.ico` is the tab icon. `404.html` is the not found page.
