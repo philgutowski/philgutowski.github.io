@@ -89,12 +89,55 @@ body {
   text-wrap: pretty;
 }
 
+.avatar-button {
+  padding: 0;
+  border: 0;
+  background: none;
+  border-radius: 50%;
+  cursor: zoom-in;
+  line-height: 0;
+  margin: 1rem 0 0.75rem;
+}
+
+.avatar-button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
 .avatar {
+  display: block;
   width: clamp(7.25rem, 31.5vw, 10.3rem);
   height: auto;
   border-radius: 50%;
   box-shadow: 0 0 0 3px var(--ring), var(--avatar-shadow);
-  margin: 1rem 0 0.75rem;
+}
+
+/* Enlarged photo: a dimmed backdrop over the page with the big circle centered. */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  background: color-mix(in srgb, var(--bg) 0%, transparent);
+  cursor: zoom-out;
+  transition: background-color 350ms ease;
+}
+
+.lightbox[hidden] { display: none; }   /* our display: grid above would otherwise beat the hidden attribute */
+
+.lightbox.is-open {
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+}
+
+.lightbox-photo {
+  width: min(88vw, 70vh, 26rem);
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--ring), var(--avatar-shadow);
+  transform-origin: center;
+  transition: transform 350ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: transform;
 }
 
 .name {
@@ -193,5 +236,5 @@ body {
 :root[data-theme="dark"] .theme-toggle .moon { display: none; }
 
 @media (prefers-reduced-motion: reduce) {
-  body, .links a, .theme-toggle { transition: none; }
+  body, .links a, .theme-toggle, .lightbox, .lightbox-photo { transition: none; }
 }
