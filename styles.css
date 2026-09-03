@@ -90,7 +90,7 @@ body {
 }
 
 .avatar {
-  width: clamp(6.6rem, 28.6vw, 9.35rem);
+  width: clamp(7.25rem, 31.5vw, 10.3rem);
   height: auto;
   border-radius: 50%;
   box-shadow: 0 0 0 3px var(--ring), var(--avatar-shadow);
