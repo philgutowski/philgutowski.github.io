@@ -35,3 +35,9 @@ cards (bleed 3.66 x 2.16 in, trim 3.5 x 2 in, safe area 3.34 x 1.84 in). `front.
 the versatile entry on navy, `back.html` is the name and contact details on paper, and
 `card.css` holds the sizes and colors. Run `card/build.sh` to regenerate `front.pdf`,
 `back.pdf`, `front.jpg`, and `back.jpg` with headless Chrome. Upload the PDFs to MOO.
+
+## LinkedIn banner
+
+`banner/` holds the LinkedIn profile banner, the versatile entry on navy at LinkedIn's
+1584 x 396 size, with the content kept right of the spot where the profile photo overlaps.
+Run `banner/build.sh` to regenerate `linkedin-banner.png` with headless Chrome.
