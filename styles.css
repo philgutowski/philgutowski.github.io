@@ -64,7 +64,7 @@ body {
 }
 
 /* The dictionary entry */
-.word { margin-bottom: 0.5rem; }
+.word { margin-bottom: 0.25rem; }
 
 .headword {
   margin: 0;
@@ -90,15 +90,15 @@ body {
 }
 
 .avatar {
-  width: clamp(6rem, 26vw, 8.5rem);
+  width: clamp(6.6rem, 28.6vw, 9.35rem);
   height: auto;
   border-radius: 50%;
   box-shadow: 0 0 0 3px var(--ring), var(--avatar-shadow);
-  margin: 0.5rem 0 0.25rem;
+  margin: 1rem 0 0.75rem;
 }
 
 .name {
-  margin: 0.35rem 0 0.25rem;
+  margin: 0 0 0.25rem;
   font-family: var(--font-name);
   font-size: clamp(2rem, 1.4rem + 3vw, 3rem);
   line-height: 1.3;
