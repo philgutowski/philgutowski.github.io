@@ -3,13 +3,13 @@
    Change the palette and fonts in :root and everything below follows. */
 
 :root {
-  --bg: #0f1d2b;          /* deep navy */
-  --bg-glow: #1b3247;     /* lighter navy for the radial glow behind the card */
-  --text: #eee7da;        /* warm sand */
-  --muted: #9db0c2;       /* desaturated blue for secondary text */
-  --accent: #e8a33d;      /* amber, the one accent color */
-  --accent-text: #0f1d2b; /* text color on top of the accent */
-  --ring: rgba(238, 231, 218, 0.18);
+  --bg: #f6f1e8;          /* warm paper */
+  --bg-glow: #ffffff;     /* white glow behind the card */
+  --text: #17303f;        /* navy */
+  --muted: #526676;       /* slate for secondary text */
+  --accent: #9c5211;      /* copper, the one accent color */
+  --accent-text: #f6f1e8; /* text color on top of the accent */
+  --ring: rgba(23, 48, 63, 0.15);
 
   --font-body: "Merriweather", Georgia, "Times New Roman", serif;
   --font-name: "Pacifico", "Brush Script MT", cursive;
@@ -75,7 +75,7 @@ body {
   width: clamp(6rem, 26vw, 8.5rem);
   height: auto;
   border-radius: 50%;
-  box-shadow: 0 0 0 3px var(--ring), 0 18px 40px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 0 0 3px var(--ring), 0 14px 30px rgba(23, 48, 63, 0.22);
   margin: 0.5rem 0 0.25rem;
 }
 
