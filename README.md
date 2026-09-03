@@ -14,7 +14,7 @@ of this repo. The `CNAME` file maps the custom domain.
   reads from those variables. A new theme is a change to those two blocks only.
 - Fonts load from Google Fonts (Merriweather for the text, Pacifico for the name) with
   system fallbacks, so the page still reads fine if the font request fails.
-- `img/avatar.jpg` is the photo. Replace it with any square image of 512 pixels or more.
+- `img/avatar.jpg` is the photo at 512 pixels, and `img/avatar-large.jpg` is the same crop at 1280 pixels for the click to enlarge view. Replace both from the same square crop.
 - `favicon.svg` is the tab icon, `apple-touch-icon.png` is the same mark at 180 pixels for
   phone home screens, and `favicon.ico` is the fallback for old browsers.
 - `404.html` is the not found page. It shares `styles.css` and the theme script.
